@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.productsHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    background-color: #f05023;
+}
+
+.productHeaderGenre {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.socialMediaIcon {
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    border: 2px solid #fff;
+    margin-right: 8px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.iconFacebook:hover {
+    background-color: #0084ff;
+}
+
+.iconPinterest:hover {
+    background-color: red;
+}
+
+.productsPageMain {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px 30px;
+}
+
+.productsPageMainElement {
+    width: 25%;
+    padding: 8px;
+}
+
+.productsPageElement {
+    width: 100%;
+}
+
+.productImage {
+    width: 100%;
+    height: auto;
+}
+
+.productName {
+    color: #f05023;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.productsPageElement {
+    text-decoration: none;
+}
+
+.productPrice {
+    font-weight: 500;
+}
+
+.productMainHeader {
+    width: 85%;
+    display: flex;
+    margin-left: 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+.linkToHome,
+.divider {
+    color: rgb(107, 104, 104);
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.linkToHome:hover {
+    color: #000;
+}
+
+.currentPage {
+    font-weight: 600;
+}
+
+.loadMoreBtn {
+    padding: 8px 12px;
+    background-color: #f05023;
+    color: #fff;
+    font-weight: 600;
+    width: fit-content;
+    margin: auto;
+    margin-top: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.loadMoreBtn:hover {
+    background-color: #8b260a;
+}
+
+@media (max-width: 848px) {
+    .productsHeader {
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    .productHeaderGenre {
+        margin-bottom: 12px;
+    }
+
+    .productsPageMainElement {
+        width: 33.33333%;
+    }
+
+    .productMainHeader {
+        justify-content: center;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 548px) {
+    .productsPageMainElement {
+        width: 50%;
+    }
+}

@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    /* position: fixed; */
+}
+
+.sideBars {
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(240, 80, 35, 0.3);
+    height: 100%;
+    overflow-y: scroll;
+    z-index: 2;
+
+    animation: fadeIn .2s linear;
+}
+
+@keyframes fadeIn {
+    0% {
+        left: -100%;
+    }
+
+    25% {
+        left: -75%;
+    }
+
+    50% {
+        left: -50%;
+    }
+
+    75% {
+        left: -25%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.sideBarsMain {
+    background-color: rgba(255, 255, 255, .95);
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    padding-bottom: 160px;
+    overflow-y: scroll;
+}
+
+.logInCloseBtn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 3px;
+    cursor: pointer;
+    color: #000;
+    opacity: 0.5;
+    font-size: 34px;
+}
+
+.sideBarsElement {
+    display: flex;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.sideBarsNavIcon {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+.inputSearch {
+    padding: 8px;
+    width: 80%;
+    font-size: 18px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.searchIcon {
+    font-size: 22px;
+    position: relative;
+    left: -30px;
+}

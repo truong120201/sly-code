@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.cartModal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(240, 80, 35, 0.3);
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.logInCloseBtn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 3px;
+    font-size: 24px;
+    color: #000;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.cartElement {
+    background-color: rgba(255, 255, 255, .95);
+    /* min-width: 340px; */
+    width: 30%;
+    height: 100%;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 100px;
+}
+
+.cartHeading {
+    font-size: 20px;
+    color: #f05023;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.divider {
+    background-color: #ccc;
+    height: 4px;
+    width: 60px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.productElement {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.productCartImage {
+    width: 60px;
+    height: 60px;
+}
+
+
+.productName {
+    color: #f05023;
+    font-size: 16px;
+    margin-left: 12px;
+    width: 150px;
+    margin-bottom: 8px;
+}
+
+.productAmountAndPrice {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(61, 60, 60);
+}
+
+.productAmount {
+    font-size: 12px;
+    color: #777;
+}
+
+.cusTimesIcon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #ccc;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-left: 12px;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cusTimesIcon:hover {
+    border-color: #000;
+    color: #000;
+    cursor: pointer;
+}
+
+.sumPrice {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sumPrice {
+    color: rgba(58, 56, 56, 0.467);
+}
+
+.moneyNum {
+    color: rgb(61, 60, 60);
+    font-weight: 600;
+}
+
+.cartNav {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartNavElement {
+    width: 100%;
+    text-decoration: none;
+    padding: 8px 0;
+    background-color: #f05023;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cartNavElement:first-child {
+    margin-bottom: 12px;
+    background-color: #000;
+}
+
+
+@media (max-width: 848px) {
+
+    .logInCloseBtn {
+        top: 4px;
+        right: 4px;
+        color: #000;
+        font-size: 34px;
+    }
+
+    .cartModal {
+        position: absolute;
+        top: 100px;
+    }
+
+    .cartElement {
+        width: 100%;
+        min-width: 0;
+    }
+}

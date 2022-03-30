@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.fontSize16 {
+    font-size: 16px !important;
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+.logInModal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(240, 80, 35, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.logInContent {
+    padding: 30px 20px;
+    background-color: #fff;
+    max-width: 875px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logInCloseBtn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 3px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.logInElement {
+    text-align: left;
+    width: 50%;
+}
+
+.logInHeading {
+    font-size: 20px;
+    color: #f05023;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.logInDetailHeading {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.logInDetailRemem {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.logInInput {
+    width: 100%;
+    margin-bottom: 8px;
+    height: 38px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    outline: none;
+    padding-left: 12px;
+}
+
+.loginSubmitBtn {
+    background-color: #f05023;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.logInDetailRemem {
+    margin-bottom: 8px;
+}
+
+.logInDetailRememDes {
+    margin-left: 4px;
+}
+
+.forgetPassword {
+    text-decoration: none;
+    color: #f05023;
+    font-size: 12px;
+    font-weight: 500;
+    /* margin-top: 8px;  */
+}
+
+.logInDetail {
+    margin-bottom: 8px;
+}
+
+.logInLog {
+    padding-right: 12px;
+    border-right: 1px solid #ccc;
+}
+
+.logInRegister {
+    padding-left: 12px;
+}
+
+.registerDes {
+    margin-bottom: 8px;
+    opacity: 0.6;
+}
+
+@media (max-width: 848px) {
+    .logInModal {
+        top: 100px;
+    }
+    
+    .logInContent {
+        overflow-y: scroll;
+        height: 100%;
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .logInElement {
+        width: 100%;
+        margin-bottom: 34px;
+    }
+
+    .logInRegister {
+        padding-left: 0;
+        margin-top: 12px;
+    }
+
+    .logInLog {
+        border: none;
+    }
+
+    .logInCloseBtn {
+        position: fixed;
+        top: 104px;
+        right: 4px;
+        color: #000;
+        opacity: 0.5;
+        font-size: 34px;
+    }
+
+    .registerDes {
+        text-transform: lowercase;
+    }
+
+    .registerDes::first-letter {
+        text-transform: uppercase;
+    }
+}

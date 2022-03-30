@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.navigation{
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.navigationElement {
+    display: inline-block;
+    margin: 0 8px;
+}
+.navigationElement:hover {
+    background-color: #000;
+}
+
+.navImage {
+    width: 90px;
+    height: auto;
+    margin: 4px 18px;
+    padding: 12px;
+}
+
+.navigationElementLinkShopee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+    background-color: #f05023;
+    min-height: 116px
+}
+
+.navigationElementLinkShopee:hover {
+    background-color: #f05023;
+}
+
+.shopeeLink{
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+@media (max-width: 848px) {
+    .navigation {
+        position: fixed;
+        bottom: 0;
+        flex-wrap: nowrap;
+    }
+
+    .navigationElementLinkShopee{
+        display: none;
+    }
+
+    .navigationElement{
+        flex-shrink: 1;
+    }
+
+    .navImage{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}

@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.productsPageMain {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px 30px;
+}
+
+.productsPageMainElement {
+    width: 25%;
+    padding: 8px;
+}
+
+.productsPageElement {
+    width: 100%;
+}
+
+.productImage {
+    width: 100%;
+    height: auto;
+}
+
+.productName {
+    color: #f05023;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.productsPageElement {
+    text-decoration: none;
+}
+
+.productPrice {
+    font-weight: 500;
+}
+
+.homeNewHeader {
+    font-weight: 500;
+    font-size: 24px;
+    padding-top: 12px;
+}
+
+
+.banner {
+    display: flex;
+    margin-top: 24px;
+}
+
+.bannerElement {
+    width: 50%;
+    position: relative;
+}
+
+.bannerImg {
+    width: 100%;
+    height: auto;
+}
+
+
+.bannerAbout {
+    position: absolute;
+    bottom: 30px;
+}
+
+.bannerAboutLeft {
+    right: 30px;
+    text-align: right;
+}
+
+.bannerAboutRight {
+    left: 30px;
+    text-align: left;
+}
+
+.bannerAboutHeader {
+    color: #f05023;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.bannerAboutDesc {
+    color: #777777;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.linkToFB {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 8px;
+    background-color: #f05023;
+    width: fit-content;
+    padding: 4px;
+    padding-left: 8px;
+    font-size: 14px;
+}
+
+.linkToFBIcon {
+    margin-right: 8px;
+}
+
+.linkToFBIconLeft {
+    float: right;
+}
+
+@media (max-width: 848px) {
+
+    .productsPageMainElement {
+        width: 33.33333%;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .bannerElement {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 548px) {
+    .productsPageMainElement {
+        width: 50%;
+    }
+
+}
